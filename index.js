@@ -1,20 +1,21 @@
 //Index.ios.js - place code in here for IOS!!!!
 
-
 //Import a library to help create a component
-import React from 'react';
-import { Text, AppRegistry } from 'react-native';
+import React from "react";
+import { AppRegistry, View } from "react-native";
 
-import Header from './src/components/Header'
+import Header from "./src/components/Header";
+import AlbumList from "./src/components/AlbumList";
 
 //Create a component
 const App = () => {
-    return (
-    <Header />  
-    )
-}
-
+  return (
+    <View>
+      <Header headerText={"Albums!"} />
+      <AlbumList />
+    </View>
+  );
+};
 
 //Render the component to a device
-AppRegistry.registerComponent('albums', () => App);
-
+AppRegistry.registerComponent("albums", () => App);
