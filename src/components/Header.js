@@ -31,7 +31,8 @@ const styles = StyleSheet.create({
     
   },
   textStyle: {
-    fontSize: 40
+    fontSize: 40,
+    fontWeight: '500'
   }
 });
 //Make component available to other parts of the application
